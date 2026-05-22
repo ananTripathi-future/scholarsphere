@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const WhatsAppButton = () => {
   const location = useLocation();
   const isHindiPage = location.pathname.startsWith('/hindi');
-  const phoneNumber = isHindiPage ? '919884880125' : '919677195426';
+  const phoneNumber = isHindiPage ? '919884880125' : '916383528758';
 
   return (
     <a
