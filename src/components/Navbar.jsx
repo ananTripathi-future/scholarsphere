@@ -47,12 +47,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <Link to="/results" className={`font-medium transition-colors hover:text-secondary ${location.pathname === '/results' ? 'text-secondary dark:text-secondary' : 'text-gray-600 dark:text-gray-300'}`}>Results</Link>
             <Link to="/contact" className={`font-medium transition-colors hover:text-secondary ${location.pathname === '/contact' ? 'text-secondary dark:text-secondary' : 'text-gray-600 dark:text-gray-300'}`}>Contact</Link>
             
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-            >
-              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+
 
             <Link to="/contact" className="btn-primary py-2 px-5 text-sm">
               Join Now
@@ -61,12 +56,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
-            >
-              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 dark:text-gray-300 focus:outline-none"

@@ -80,15 +80,12 @@ const Results = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.2 }}
-                className="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl relative mt-10"
+                className="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl relative"
               >
-                <div className="absolute -top-10 left-8 w-20 h-20 rounded-full border-4 border-white dark:border-gray-800 overflow-hidden">
-                  <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
-                </div>
                 <div className="absolute top-6 right-8 text-gray-200 dark:text-gray-700">
                   <Quote size={40} />
                 </div>
-                <div className="mt-10 mb-6 flex text-yellow-400">
+                <div className="mb-6 flex text-yellow-400">
                   {[1, 2, 3, 4, 5].map((star) => <Star key={star} size={16} fill="currentColor" />)}
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 italic mb-6">"{testimonial.text}"</p>

@@ -63,11 +63,11 @@ const Footer = () => {
 
               <li className="flex gap-3 items-center">
                 <Phone size={20} className="text-secondary shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 63835 28758</span>
               </li>
               <li className="flex gap-3 items-center">
                 <Mail size={20} className="text-secondary shrink-0" />
-                <span>info@scholarsphere.edu</span>
+                <span>omanant.tripathi@gmail.com</span>
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, FileText, Video, HelpCircle, Clock, Calendar } from 'lucide-react';
+import { CheckCircle2, FileText, HelpCircle, Clock, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Courses = () => {
@@ -102,12 +102,11 @@ const Courses = () => {
         <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 p-8 md:p-12">
           <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10">Batch Timings & Availability</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "Morning Batch", time: "6:00 AM - 8:00 AM", mode: "Hybrid", icon: <Clock size={24} /> },
-              { title: "Evening Batch", time: "5:00 PM - 8:00 PM", mode: "Hybrid", icon: <Clock size={24} /> },
-              { title: "Weekend Batch", time: "9:00 AM - 1:00 PM", mode: "Hybrid", icon: <Calendar size={24} /> },
-              { title: "Online Batch", time: "Flexible Timings", mode: "Online", icon: <Video size={24} /> }
+              { title: "Morning Batch", time: "6:00 AM - 8:00 AM", mode: "Online", icon: <Clock size={24} /> },
+              { title: "Evening Batch", time: "5:00 PM - 8:00 PM", mode: "Online", icon: <Clock size={24} /> },
+              { title: "Weekend Batch", time: "Saturday: 9:00 AM - 1:00 PM", mode: "Online", icon: <Calendar size={24} /> }
             ].map((batch, idx) => (
               <div key={idx} className="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl text-center border border-gray-100 dark:border-gray-700">
                 <div className="text-primary dark:text-primary-light flex justify-center mb-4">{batch.icon}</div>
@@ -118,6 +117,9 @@ const Courses = () => {
                 </span>
               </div>
             ))}
+          </div>
+          <div className="mt-8 text-center text-gray-500 dark:text-gray-400 italic font-medium max-w-2xl mx-auto leading-relaxed">
+            "No classes on Sundays — because great learning also needs rest, balance, and care for both students and teachers."
           </div>
         </div>
 

@@ -176,8 +176,12 @@ ${approvalLink}`;
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="p-6 bg-orange-50 dark:bg-gray-900 rounded-2xl">
                     <Clock className="text-orange-500 mb-4" size={32} />
-                    <h4 className="font-bold text-gray-900 dark:text-white mb-2">Flexible Timings</h4>
-                    <p className="text-gray-600 dark:text-gray-400">Morning / Evening / Weekend batches available.</p>
+                    <h4 className="font-bold text-gray-900 dark:text-white mb-2">Batch Timings</h4>
+                    <p className="text-orange-600 dark:text-orange-400 font-semibold mb-1">2 Days a Week</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">
+                      • 6:00 PM - 7:30 PM<br />
+                      • 7:30 PM - 9:00 PM
+                    </p>
                   </div>
                   <div className="p-6 bg-orange-50 dark:bg-gray-900 rounded-2xl">
                     <MapPin className="text-orange-500 mb-4" size={32} />

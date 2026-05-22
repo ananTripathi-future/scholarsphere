@@ -145,10 +145,38 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Class 10 Science", icon: <BrainCircuit size={24} />, color: "from-green-400 to-green-600", desc: "Complete physics, chemistry, and biology coverage for board exams.", link: "/courses" },
-              { title: "Class 11 Chemistry", icon: <FlaskConical size={24} />, color: "from-blue-400 to-blue-600", desc: "Strong foundational concepts for school exams and competitive prep.", link: "/courses" },
-              { title: "Class 12 Chemistry", icon: <Atom size={24} />, color: "from-purple-400 to-purple-600", desc: "Advanced concepts, organic chemistry mastery, and board exam focus.", link: "/courses" },
-              { title: "Hindi Tuition", icon: <BookOpen size={24} />, color: "from-orange-400 to-red-500", desc: "Comprehensive CBSE Hindi Coaching, Grammar (व्याकरण) & Literature.", link: "/hindi" }
+              { 
+                title: "Class 10 Science", 
+                icon: <BrainCircuit size={24} />, 
+                color: "from-green-400 to-green-600", 
+                desc: "Complete physics, chemistry, and biology coverage for board exams.", 
+                link: "/courses",
+                features: ["Physics, Chemistry & Biology prep", "NCERT chapter-wise mastery", "Weekly subject tests"]
+              },
+              { 
+                title: "Class 11 Chemistry", 
+                icon: <FlaskConical size={24} />, 
+                color: "from-blue-400 to-blue-600", 
+                desc: "Strong foundational concepts for school exams and competitive prep.", 
+                link: "/courses",
+                features: ["In-depth organic & inorganic concepts", "Numerical problem-solving strategies", "Regular assignment evaluations"]
+              },
+              { 
+                title: "Class 12 Chemistry", 
+                icon: <Atom size={24} />, 
+                color: "from-purple-400 to-purple-600", 
+                desc: "Advanced concepts, organic chemistry mastery, and board exam focus.", 
+                link: "/courses",
+                features: ["Targeted board exam preparations", "Intensive chemical equation practice", "Full-length mock board exams"]
+              },
+              { 
+                title: "Hindi Tuition", 
+                icon: <BookOpen size={24} />, 
+                color: "from-orange-400 to-red-500", 
+                desc: "Comprehensive CBSE Hindi Coaching, Grammar (व्याकरण) & Literature.", 
+                link: "/hindi",
+                features: ["CBSE Grammar (व्याकरण) expertise", "Literature reading & writing skills", "Regular dictation & vocabulary tests"]
+              }
             ].map((course, idx) => (
               <motion.div 
                 key={idx}
@@ -166,7 +194,7 @@ const Home = () => {
                 <div className="p-6">
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{course.desc}</p>
                   <ul className="space-y-3 mb-8">
-                    {['Comprehensive syllabus coverage', 'Weekly mock tests', 'Doubt clearing sessions'].map((feature, i) => (
+                    {course.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                         <CheckCircle2 size={16} className="text-green-500" /> {feature}
                       </li>
@@ -264,9 +292,6 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact" className="btn-primary text-lg px-8">
                   Book a Demo Class
-                </Link>
-                <Link to="/contact" className="btn-secondary text-lg px-8 flex items-center justify-center gap-2">
-                  <Clock size={20} /> View Timetable
                 </Link>
               </div>
             </div>

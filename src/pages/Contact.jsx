@@ -87,7 +87,7 @@ ${approvalLink}`;
                </div>
                <div>
                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone Number</label>
-                 <input required type="tel" name="phone" value={formData.phone} onChange={handleChange} className={`w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:border-transparent transition-all ${ringClass}`} placeholder="+91 98765 43210" />
+                 <input required type="tel" name="phone" value={formData.phone} onChange={handleChange} className={`w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:border-transparent transition-all ${ringClass}`} placeholder="+91 63835 28758" />
                </div>
             </div>
             <div>
@@ -158,7 +158,7 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Working Hours</h3>
-              <p className="text-gray-600 dark:text-gray-400">Monday - Saturday: 9:00 AM - 8:00 PM</p>
+              <p className="text-gray-600 dark:text-gray-400">Monday - Saturday: 8:00 AM - 9:00 PM</p>
             </div>
           </div>
           <div className="text-center md:text-right">
