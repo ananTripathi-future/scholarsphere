@@ -251,14 +251,17 @@ const Home = () => {
             viewport={{ once: true }}
             className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-gray-100 dark:border-gray-800"
           >
-            <div className="md:w-2/5 h-96 md:h-auto bg-gray-200 dark:bg-gray-800">
-              <img 
-                src="/founder.png" 
-                alt="Anant Tripathi - Founder" 
-                className="w-full h-full object-cover object-top"
-              />
+            <div className="md:w-1/3 flex items-center justify-center p-8 bg-blue-50/20 dark:bg-blue-950/10">
+              <div className="relative">
+                <div className="absolute inset-0 bg-blue-500/10 dark:bg-blue-400/10 rounded-3xl blur-xl transform translate-y-2 translate-x-2"></div>
+                <img 
+                  src="/founder.png" 
+                  alt="Anant Tripathi - Founder" 
+                  className="relative z-10 w-48 h-48 md:w-56 md:h-72 object-cover object-top rounded-3xl border-4 border-white dark:border-gray-800 shadow-xl"
+                />
+              </div>
             </div>
-            <div className="md:w-3/5 p-10 md:p-16 flex flex-col justify-center">
+            <div className="md:w-2/3 p-10 md:p-16 flex flex-col justify-center">
               <h2 className="text-sm font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-2">Meet the Founder</h2>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Anant Tripathi</h3>
               <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mb-6 rounded-full"></div>
