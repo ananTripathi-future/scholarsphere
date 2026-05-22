@@ -1,16 +1,39 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📚 ScholarSphere
 
-Currently, two official plugins are available:
+A minimal React + Vite setup with HMR and ESLint — fast by default, extensible by design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-ready-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚡ Official Plugins
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Plugin | Compiler | Description |
+|--------|----------|-------------|
+| `@vitejs/plugin-react` | [Oxc](https://oxc.rs) | Ultra-fast transforms via Oxc |
+| `@vitejs/plugin-react-swc` | [SWC](https://swc.rs) | Rust-powered compilation speed |
+
+---
+
+## 🔧 Configuration Notes
+
+### React Compiler
+Disabled by default to preserve dev & build performance. To enable it, see the [React Compiler installation docs](https://react.dev/learn/react-compiler/installation).
+
+### ESLint (Production)
+For production apps, use TypeScript with type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) and integrate [`typescript-eslint`](https://typescript-eslint.io).
+
+---
+
+## 🔗 Quick Links
+
+- 📖 [React Compiler Docs](https://react.dev/learn/react-compiler/installation)
+- 🟦 [Vite TS Template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts)
+- 🛡️ [typescript-eslint](https://typescript-eslint.io)
