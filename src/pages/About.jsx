@@ -14,46 +14,22 @@ const About = () => {
         </div>
 
         {/* Faculty Profile */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="max-w-4xl mx-auto mb-20">
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative"
+            className="text-center bg-gray-50/50 dark:bg-gray-800/20 p-8 md:p-12 rounded-3xl border border-gray-100 dark:border-gray-800"
           >
-            <div className="absolute inset-0 bg-primary/20 transform rotate-3 rounded-3xl"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800" 
-              alt="Experienced Faculty" 
-              className="relative z-10 rounded-3xl shadow-2xl object-cover w-full h-[500px]"
-            />
-            <div className="absolute bottom-6 left-6 z-20 glass-card p-4">
-              <div className="flex items-center gap-3">
-                <div className="bg-secondary text-white p-3 rounded-full">
-                  <Award size={24} />
-                </div>
-                <div>
-                  <div className="font-bold text-xl text-gray-900 dark:text-white">25+ Years</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Teaching Experience</div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Expert Guidance for Your Success</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Expert Guidance for Your Success</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed max-w-3xl mx-auto">
               With over 25 years of teaching experience, our academy provides top-tier education for Class 10 Science and Class 11 & 12 Chemistry students. We have successfully taught in reputed schools across Chennai and Delhi.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
               Our teaching approach focuses on conceptual understanding, exam preparation, regular practice, and personalized guidance to help every student achieve excellent academic results. Over the last 5+ years, we have mastered online coaching, bringing the classroom experience directly to your home.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-8 text-left max-w-2xl mx-auto border-t border-gray-200/60 dark:border-gray-700/60 pt-10">
               {[
                 { title: "Reputed Schools", desc: "Experience in top Chennai & Delhi schools" },
                 { title: "Online Expertise", desc: "5+ years of successful online classes" },
@@ -61,9 +37,9 @@ const About = () => {
                 { title: "Custom Study Material", desc: "Tailored notes for board exams" }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 items-start">
-                  <div className="text-primary mt-1"><Target size={20} /></div>
+                  <div className="text-primary mt-1 shrink-0"><Target size={20} /></div>
                   <div>
-                    <h4 className="font-bold text-gray-900 dark:text-white">{item.title}</h4>
+                    <h4 className="font-bold text-gray-900 dark:text-white text-lg">{item.title}</h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{item.desc}</p>
                   </div>
                 </div>
