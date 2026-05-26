@@ -9,23 +9,14 @@ const Hindi = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const ADMIN_WHATSAPP = '916383528758';
-    const targetPhone = '919884880125';
     
-    // The message that will be sent to the Hindi faculty when admin clicks approve
-    const facultyMessage = `✅ *APPROVED ENQUIRY*\n*Department:* Hindi Tuition\n*Student Name:* ${formData.name}\n*Student Phone:* ${formData.phone}\n*Class:* ${formData.class}`;
-    const approvalLink = `https://wa.me/${targetPhone}?text=${encodeURIComponent(facultyMessage)}`;
-
     // The message the student sends to the admin
     const text = `Hello *Anant Tripathi* (Admission Coordinator),
 
-I would like to submit my callback request for approval:
+I would like to submit my callback request:
 *Student Name:* ${formData.name}
 *Phone:* ${formData.phone}
-*Class:* ${formData.class}
-
----
-*(Admin Action: Click the link below to verify and forward to the Hindi Faculty)*
-${approvalLink}`;
+*Class:* ${formData.class}`;
 
     window.open(`https://wa.me/${ADMIN_WHATSAPP}?text=${encodeURIComponent(text)}`, '_blank');
     setFormData({ name: '', phone: '', class: 'Select Class' });

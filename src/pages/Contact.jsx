@@ -17,24 +17,14 @@ const ContactSection = ({ title, desc, icon, buttonClass, ringClass, textClass, 
     // The hidden admin/approval number
     const ADMIN_WHATSAPP = '916383528758';
 
-    const facultyPhone = phone.replace(/[^0-9]/g, '');
-
-    // The message that will be sent to the faculty when admin clicks approve
-    const facultyMessage = `✅ *APPROVED ENQUIRY*\n*Department:* ${title}\n*Student Name:* ${formData.name}\n*Student Phone:* ${formData.phone}\n*Course:* ${formData.course}\n*Message:* ${formData.message}`;
-    const approvalLink = `https://wa.me/${facultyPhone}?text=${encodeURIComponent(facultyMessage)}`;
-
     // The message the student sends to the admin
     const text = `Hello *Anant Tripathi* (Admission Coordinator),
 
-I would like to submit my enquiry details for approval:
+I would like to submit my enquiry details:
 *Student Name:* ${formData.name}
 *Phone:* ${formData.phone}
 *Course:* ${formData.course}
-*Message:* ${formData.message}
-
----
-*(Admin Action: Click the link below to verify and forward to the ${title} Faculty)*
-${approvalLink}`;
+*Message:* ${formData.message}`;
 
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/${ADMIN_WHATSAPP}?text=${encodedText}`, '_blank');
