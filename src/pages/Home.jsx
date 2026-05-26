@@ -183,24 +183,24 @@ const Home = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800"
+                className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800 flex flex-col h-full"
               >
-                <div className={`h-32 bg-gradient-to-r ${course.color} p-6 flex items-end relative overflow-hidden`}>
+                <div className={`h-32 bg-gradient-to-r ${course.color} p-6 flex items-end relative overflow-hidden shrink-0`}>
                   <div className="absolute -right-4 -top-4 text-white/20 transform rotate-12 scale-150">
                     {course.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-white relative z-10">{course.title}</h3>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{course.desc}</p>
-                  <ul className="space-y-3 mb-8">
+                  <ul className="space-y-3 mb-8 flex-grow">
                     {course.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                         <CheckCircle2 size={16} className="text-green-500" /> {feature}
                       </li>
                     ))}
                   </ul>
-                  <Link to={course.link} className="block w-full py-3 text-center rounded-lg bg-gray-50 dark:bg-gray-800 text-primary dark:text-primary-light font-semibold hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors border border-gray-200 dark:border-gray-700">
+                  <Link to={course.link} className="block w-full py-3 text-center rounded-lg bg-gray-50 dark:bg-gray-800 text-primary dark:text-primary-light font-semibold hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors border border-gray-200 dark:border-gray-700 mt-auto">
                     Explore Course
                   </Link>
                 </div>
