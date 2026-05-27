@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -44,24 +45,27 @@ function App() {
   };
 
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="min-h-screen flex flex-col font-sans transition-colors duration-300">
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <main className="flex-grow pt-20">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/results" element={<Results />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/hindi" element={<Hindi />} />
-          </Routes>
-        </main>
-        <Footer />
-        <WhatsAppButton />
-      </div>
-    </Router>
+    <>
+      <Router>
+        <ScrollToTop />
+        <div className="min-h-screen flex flex-col font-sans transition-colors duration-300">
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <main className="flex-grow pt-20">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/results" element={<Results />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/hindi" element={<Hindi />} />
+            </Routes>
+          </main>
+          <Footer />
+          <WhatsAppButton />
+        </div>
+      </Router>
+      <SpeedInsights />
+    </>
   );
 }
 
