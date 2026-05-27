@@ -1,7 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BookOpen, Users, Award, PlayCircle, Clock, CheckCircle2, FlaskConical, Atom, BrainCircuit, Star } from 'lucide-react';
+import { BookOpen, Users, Award, PlayCircle, CheckCircle2, FlaskConical, Atom, BrainCircuit, Star } from 'lucide-react';
 
 const Home = () => {
   const fadeIn = {

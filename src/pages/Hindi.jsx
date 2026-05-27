@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, CheckCircle2, Users, Star, MessageCircle, Clock, MapPin, Phone, Mail, ChevronDown, ChevronUp } from 'lucide-react';
+import { BookOpen, CheckCircle2, Users, Star, Clock, MapPin, Phone, Mail, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Hindi = () => {
   const [activeFaq, setActiveFaq] = useState(null);
