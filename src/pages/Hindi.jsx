@@ -201,8 +201,13 @@ I would like to submit my callback request:
           <div className="glass-card bg-orange-50/50 dark:bg-gray-800 p-8 md:p-12 rounded-3xl border border-orange-100 dark:border-gray-700 text-left relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl"></div>
             <div className="flex flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
-              <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex-shrink-0 flex items-center justify-center text-white text-4xl shadow-xl">
-                👩‍🏫
+              <div className="flex flex-col items-center gap-3 flex-shrink-0">
+                <img 
+                  src="/anupama.jpg" 
+                  alt="Anupama Tripathi" 
+                  className="w-32 h-32 rounded-full object-cover shadow-xl border-4 border-white dark:border-gray-800"
+                />
+                <span className="font-bold text-lg text-gray-900 dark:text-white text-center">Anupama Tripathi</span>
               </div>
               <div className="w-full">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Expert Hindi Faculty</h3>
